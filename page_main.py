@@ -3,6 +3,7 @@ import streamlit as st
 from collatz import collatz
 from input import input_number
 from plot import plot_linechart
+from explanation import explanation
 
 
 
@@ -19,6 +20,21 @@ def page_main():
         st.subheader("計算過程：")
         st.markdown(f"{' → '.join(map(str, sequence))}")
         plot_linechart(sequence)
+    
+    st.title("")
+    st.title("")
+    st.title("")
+    st.title("")
+    st.title("")
+    st.title("")
+            
+    styled_html = explanation()
+    st.markdown(styled_html, unsafe_allow_html=True)  # StreamlitでHTMLコードを表示
+     
+
+
+
+
 
 
 
