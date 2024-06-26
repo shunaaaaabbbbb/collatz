@@ -23,7 +23,6 @@ def page_main():
     
     st.title("")
     st.title("")
-    st.title("")
             
     styled_html = explanation()
     st.markdown(styled_html, unsafe_allow_html=True)  # StreamlitでHTMLコードを表示
